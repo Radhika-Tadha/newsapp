@@ -1,6 +1,26 @@
+body {
+  background-color: #fffffc;
+}
 body .card a{
+
   display: flex;
   justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* color:#fdf0d5 */
+  /* color: #c1121f; */
+  /* color: #003049; */
+  /* color: #023e8a; */
+  /* color: #48cae4; */
+}
+/* .navbar{
+  background-color: #011f30;
+  
+} */
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .nav-link.active,
+.navbar .navbar-text {
+  color: whitesmoke;
 }
 .App {
   text-align: center;
