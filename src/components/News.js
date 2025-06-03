@@ -25,12 +25,13 @@ export class News extends Component {
         }
     }
     async updateNews(pageNo) {
-        const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}
-        &category=${this.props.category}
-        &page=${this.state.page}
-        &apiKey=c98bdf7310504caa9a7d7f571f9a2717
-        &page=1&pageSize=${this.props.pageSize}`;
-        { this.setState({ loading: true }) }
+        const url=`https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=c98bdf7310504caa9a7d7f571f9a2717&page=1&pageSize=${this.props.pageSize}`;
+        // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}
+        // &category=${this.props.category}
+        // &page=${this.state.page}
+        // &apiKey=c98bdf7310504caa9a7d7f571f9a2717
+        // &page=1&pageSize=${this.props.pageSize}`;
+        {this.setState({ loading: true })}
         let data = await fetch(url);
         let parsedData = await data.json()
         console.log(parsedData);
